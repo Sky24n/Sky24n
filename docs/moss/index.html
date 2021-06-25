@@ -1,16 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <script language="javascript" type="text/javascript">
-	window.location.href='https://sky24n.github.io/Moss/web/index.html';
-  </script>
-  <title>Moss</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Moss</title>
+    <style>
+     .button {
+         width: 120px;
+         height: 120px;
+         display: inline-block;
+         border-radius: 50%;
+         background-color: #4CAF50;
+         border: none;
+         color: #FFFFFF;
+         text-align: center;
+         font-size: 20px;
+         padding: 20px;
+         transition: all 0.5s;
+         cursor: pointer;
+         margin: 20px;
+     }
+
+     .button span {
+         cursor: pointer;
+         display: inline-block;
+         position: relative;
+         transition: 0.5s;
+     }
+
+     .button span:after {
+         content: '»';
+         position: absolute;
+         opacity: 0;
+         top: 0;
+         right: -20px;
+         transition: 0.5s;
+     }
+
+     .button:hover span {
+         padding-right: 25px;
+     }
+
+     .button:hover span:after {
+         opacity: 1;
+         right: 0;
+     }
+
+     .button:hover {
+         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+     }
+
+    .button2 {background-color: #f44336;} /* Red */
+
+
+    </style>
 </head>
 <body style="text-align:center; font-family:Arial,Helvetica,sans-serif; padding-top:100px">
-<h1>Loading...</h1>
+<h1 style="padding-bottom:0px">Moss</h1>
+<h3 style="padding-bottom:20px"></h3>
+<button class="button" style="vertical-align:middle" onclick="window.location.href='https://sky24n.github.io/Moss/web/index.html'"><span>GitHub</span></button>
+<button class="button button2" style="vertical-align:middle" onclick="window.location.href='https://sky24n.gitee.io/moss/web/index.html'"><span>Gitee</span></button>
+</div>
 </body>
 </html>
